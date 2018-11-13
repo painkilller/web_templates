@@ -1,0 +1,86 @@
+
+
+#left_arrow,
+#right_arrow {
+    display: block;
+    background: #555555;
+    position: absolute;
+    padding: 50px 8px;
+    font-size: 30px;
+}
+
+#right_arrow {
+    right: 0;
+}
+
+#left_arrow {
+    left: 0;
+}
+
+
+/* CAROUSEL CAPTION */
+
+.carousel-caption {
+    bottom: 0;
+    left: 0;
+    padding: 10px 0 0 10px;
+    color: #000;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+  }
+
+  .carousel-caption p {
+      font-size: 13px;
+  }
+
+  /* #image_text {
+      display: none !important;
+  } */
+
+  #right_arrow:hover,
+  #left_arrow:hover {
+     background: #000000; 
+  }
+
+
+  /* Content area */
+
+  #content_area {
+      margin: 35px 0 85px 0;
+      padding: 0 40px;
+      color: #555555;
+  }
+
+  #content_area .col-md-5 p:first-child {
+      font-weight: bold;
+      font-size: 22px;
+      color: #555555;
+  }
+
+  #content_area .col-md-5 p:last-child {
+      font-size: 13px;
+      font-style: italic;
+  }
+
+  #content_area .col-md-7 p {
+      font-size: 13px;
+  }
+
+  #content_area .col-md-7 p:last-child {
+      margin-top: 25px;
+  }
+
+
+
+
+  /* MEDIA QUERIES */
+
+  @media screen and (max-width: 576px) {
+      /* Hiding left and right arrow in > 576px */
+
+      #right_arrow,
+      #left_arrow {
+          display: none;
+      }
+  }

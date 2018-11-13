@@ -1,0 +1,215 @@
+.my_container {
+    width: 73%;
+    margin: 0 auto;
+}
+
+
+/* TOP NAV */
+
+#top_menu .my_container .navbar {
+    background: #F6F6F6;
+    justify-content: center;
+}
+
+.top_menu_nav .collapse_div .nav-link {
+    color: #8B8B8B;
+    font-size: 13px;
+    /* margin-top: 12px; */
+}
+
+
+
+/* BOTTOM COVER AREA && BOTTOM GROUP IMAGES AREA */
+
+.text_button_area {
+    margin: 70px 0 40px 0;
+}
+
+.text_button_area .my_container {
+    width: 40%;
+}
+
+.text_button_area h6 {
+    font-weight: bold;
+    color: #555555;
+}
+
+.text_button_area p {
+    font-size: 13px;
+    margin: 25px 0;
+    line-height: 25px;
+    color: #555555;
+}
+
+.text_button_area .btn {
+    border: 0;
+    border-radius: 0;
+    padding: 6px 30px 0 30px;
+    font-size: 15px;
+}
+
+.text_button_area .btn-secondary {
+    background-color: #D1D1D1;
+}
+
+.text_button_area .btn-secondary:hover {
+    background-color: #555555;
+}
+
+
+/* GROUP IMAGES */
+
+#gr_img a img {
+    transition: opacity .40s ease-in-out;
+    -moz-transition: opacity .40s ease-in-out;
+    -webkit-transition: opacity .40s ease-in-out;
+}
+
+#gr_img a:hover img {
+    opacity: 0.2;
+} 
+
+
+
+/* FOOTER */
+
+#footer {
+    background-color: #555555;
+}
+
+#footer .navbar-nav .nav-link,
+#footer p {
+    color: #D1D1D1;
+    font-size: 13px;
+}
+
+
+#footer .navbar-nav .active > .nav-link {
+    color: #000000;
+}
+
+#footer .navbar-nav .nav-link {
+    transition: .5s;
+    color: #D1D1D1;
+}
+
+#footer .navbar-nav .nav-link:hover {
+    color: #000000;
+}
+
+#two a {
+    text-decoration: underline;
+    color: #D1D1D1;
+    text-decoration-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query */
+
+@media screen and (min-width: 992px) {
+
+    /* Setting a fixed height for the navbar in large screen until it collapses */
+
+    .collapse_div {
+        height: 37px;
+    }
+
+    .top_menu_nav {
+        padding: 0;
+    }
+
+    .top_menu_nav .nav-item {
+        padding: 8px 30px 0 8px;
+    }
+
+    /* HEIGHT OF GROUP IMAGES */
+    #gr_img .img-fluid {
+        height: 275px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .my_container,
+    .text_button_area .my_container {
+        width: 95%;
+    }
+
+
+    /* GROUP IMAGES */
+
+    #gr_img .img-fluid {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #footer .float-left {
+        float: none;
+    }
+
+    #footer #two {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    /* Removing the bg of the nav */
+
+    #top_menu .my_container .navbar {
+        background: transparent;
+    }
+
+    .text_button_area {
+        margin: 20px 0;
+    }
+
+    /* Hiding the center logo */
+
+    #logo {
+        display: none;
+    }
+
+    /* Creating margin for cover area */
+
+    #cover {
+        margin-top: 20px;
+    }
+
+    /* FOOTER AREA */
+
+    #footer .ml-3 {
+      margin-left: 0 !important;
+    }
+}
+
+

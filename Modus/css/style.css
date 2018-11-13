@@ -1,0 +1,70 @@
+/* Setting the width of class my_container */
+
+.my_container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#top_nav {
+    background: #76c7c0 url("/images/path.png") no-repeat bottom;
+    padding: 20px 0;
+}
+
+#top_nav a {
+    color: #fff;
+}
+
+/* Removing the dropdown icon */
+
+.dropdown-toggle::after {
+    display: none;
+  }
+
+/* Creating margin between all navs */
+
+.navbar-nav > li {
+    margin-right: 25px;
+}
+
+.navbar-nav > li:last-child {
+    margin-right: 0;
+}
+
+/* Setting background color to all navs */
+
+.active {
+    background: #62a29e;
+    border-bottom: 5px solid #528b86;
+    border-radius: 8px;
+}
+
+/* Creating margin for arrow icons */
+
+.svg-inline--fa {
+    margin-right: 10px;
+}
+
+.navbar-nav > .nav-item:hover {
+    background: #e8645a;
+    border-bottom: 5px solid #e2534b;
+    border-radius: 8px;
+}
+
+.dropdown-menu {
+    display: block;
+    background: red;
+    /* width: 300px; */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.dropdown-menu .dropdown-item {
+    background: green;
+    color: #000 !important;
+    /* padding: 0 20px; */
+    margin-bottom: 5px;
+}
+
+.dropdown-menu .dropdown-item:last-child {
+    margin-bottom: 0;
+}
